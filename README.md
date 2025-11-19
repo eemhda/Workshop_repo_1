@@ -37,7 +37,7 @@ Detta är en kort instruktion till vad du ska göra.
 >
 >och sedan: type -a git
 
->## Github Desktop
+>## Installera Github Desktop
 >Gå till: https://desktop.github.com/download/
 >
 >Ladda ner och installera.
@@ -47,8 +47,8 @@ Detta är en kort instruktion till vad du ska göra.
 > ### RIDER
 > Settings > Version Control > GitHub > Sign in
 > ### Visual Studio
-> 
-> 
+> Tools > Options > Source Control > Plug-in Selection > GitHub Extension for Visual Studio
+> Log in
 
 >## Hämta repo
 >Nu ska vi plocka hem ett repository från GitHub, via GitHub Desktop
@@ -59,7 +59,19 @@ Detta är en kort instruktion till vad du ska göra.
 > Välj plats, 
 > #### OBS! Var noga med var du lägger dina repon och solutions då det skapas beroenden och om du flyttar filer/mappar kan du orsaka problem
 
+>## Öppna i IDE
+> ### Via GitHub Desktop
+>Nu när du har klonat repon så kan du öppna den i din IDE
+> GitHub Desktop har en knapp för detta "Open in Visual Studio" eller "Open in Rider"
+> Klicka på den och vänta på att IDEn öppnar projektet
+>### Via IDE
+>Alternativt kan du öppna IDEn först och sedan öppna projektet därifrån
 
+>## Köra projektet
+>Nu när du har projektet öppet i din IDE så kan du köra det.
+> I Visual Studio är det bara att klicka på den gröna play knappen högst upp
+> I Rider är det liknande, en grön play knapp högst upp till höger
+> Kör och följ instruktionerna i konsolen
 
 
 

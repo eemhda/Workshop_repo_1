@@ -13,6 +13,7 @@ public class Person
 
     public override string ToString()
     {
-        return $"{FirstName}, {LastName}";
+        return $"First Name: {FirstName}," +
+               $"\nLast Name: {LastName}";
     }
 }
