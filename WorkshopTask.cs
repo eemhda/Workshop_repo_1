@@ -4,19 +4,24 @@ public class WorkshopTask
 {
     public void TaskOne()
     {
+        Console.Clear();
         Console.WriteLine("This is Workshop Task Step 1.");
         Console.WriteLine("Enter Your first name:");
         string firstName = Console.ReadLine() ?? "";
         Console.WriteLine("Enter Your last name:");
         string lastName = Console.ReadLine() ?? "";
         Person person = new Person(firstName, lastName);
-        
+        Thread.Sleep(1000);
+        Console.Clear();
         Console.WriteLine("You have now created a Person object:");
         Console.WriteLine(person);
+        Thread.Sleep(1000);
+        Console.WriteLine("Press any key to proceed to Task 2.");
         Console.ReadKey();
     }
     public void TaskTwo()
     {
+        Console.Clear();
         Console.WriteLine("This is Workshop Task Step 2.");
         Thread.Sleep(1000);
         Console.WriteLine("Prepare your Github Username");
@@ -32,6 +37,7 @@ public class WorkshopTask
 
     public void TaskThree()
     {
+        Console.Clear();
         Console.WriteLine("This is Workshop Task Step 3.");
         Thread.Sleep(1000);
         Console.WriteLine("By pressing any key, you will be guided to see a random fact.");

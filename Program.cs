@@ -19,8 +19,12 @@ class Program
             switch (choice)
             {
                 case "1":
-                    Console.WriteLine("You selected Workshop Task Step 1.");
                     workshop.TaskOne();
+                    workshop.TaskTwo();
+                    workshop.TaskThree();
+                    Console.WriteLine("You have completed all workshop tasks!");
+                    Console.WriteLine("Press any key to return to the main menu.");
+                    Console.ReadKey();
                     break;
                 case "2":
                     run = false;

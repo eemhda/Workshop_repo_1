@@ -10,7 +10,7 @@ public class FileHandler
         {
             if (!File.Exists(_filePathFacts))
             {
-                Console.WriteLine("Facts file not found.");
+                Console.WriteLine("Facts file not found. Contact Support.");
                 return null;
             }
     
