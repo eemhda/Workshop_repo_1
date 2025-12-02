@@ -2,6 +2,8 @@ namespace Workshop_repo_1;
 
 public class WorkshopTask
 {
+    // Change this to speed up/ Slow down time between messages
+    private readonly int _sleepTime = 2000;
     public void TaskOne()
     {
         Console.Clear();
@@ -11,26 +13,26 @@ public class WorkshopTask
         Console.WriteLine("Enter Your last name:");
         string lastName = Console.ReadLine() ?? "";
         Person person = new Person(firstName, lastName);
-        Thread.Sleep(1000);
+        Thread.Sleep(500);
         Console.Clear();
         Console.WriteLine("You have now created a Person object:");
         Console.WriteLine(person);
-        Thread.Sleep(1000);
+        Thread.Sleep(_sleepTime);
         Console.WriteLine("Press any key to proceed to Task 2.");
         Console.ReadKey();
     }
     public void TaskTwo()
     {
         Console.Clear();
-        Console.WriteLine("This is Workshop Task Step 2.");
-        Thread.Sleep(1000);
+        Console.WriteLine("This is Workshop Task 2.");
+        Thread.Sleep(_sleepTime);
         Console.WriteLine("Prepare your Github Username");
-        Thread.Sleep(1000);
+        Thread.Sleep(_sleepTime);
         Console.WriteLine("Go to Ted, he will add you as a contributor.");
-        Thread.Sleep(1000);
+        Thread.Sleep(_sleepTime);
         Console.WriteLine("Create a new branch named with your first name from dev-branch.");
         Console.WriteLine("Instructions on how to create a branch can be found in the README file.");
-        Thread.Sleep(1000);
+        Thread.Sleep(_sleepTime);
         Console.WriteLine("Press any key to proceed to Task 3.");
         Console.ReadKey();
     }
@@ -38,31 +40,31 @@ public class WorkshopTask
     public void TaskThree()
     {
         Console.Clear();
-        Console.WriteLine("This is Workshop Task Step 3.");
-        Thread.Sleep(1000);
+        Console.WriteLine("This is Workshop Task 3.");
+        Thread.Sleep(_sleepTime);
         Console.WriteLine("By pressing any key, you will be guided to see a random fact.");
         Console.ReadKey();
         Console.WriteLine("Loading random fact...");
-        Thread.Sleep(1000);
+        Thread.Sleep(_sleepTime);
         RandomFact fact = new RandomFact();
         string stringFact = fact.RandomFactGenerator();
         Console.WriteLine("Here is your random fact:");
         Console.WriteLine(stringFact);
-        Thread.Sleep(1000);
+        Thread.Sleep(_sleepTime);
         Console.WriteLine("Save the fact for later!");
-        Thread.Sleep(1000);
+        Thread.Sleep(_sleepTime);
         Console.WriteLine("Open the *data/Secrets.txt* file.");
-        Thread.Sleep(1000);
+        Thread.Sleep(_sleepTime);
         Console.WriteLine("Enter the saved fact on a new line in the file along with your name.");
-        Thread.Sleep(1000);
+        Thread.Sleep(_sleepTime);
         Console.WriteLine("**************EXAMPLE**************");
         Console.WriteLine("this is a random fact, Ted Petersson");
         Console.WriteLine("**********************************");
-        Thread.Sleep(1000);
+        Thread.Sleep(_sleepTime);
         Console.WriteLine("Commit and push your changes to your branch.");
-        Thread.Sleep(1000);
+        Thread.Sleep(_sleepTime);
         Console.WriteLine("Instructions on how to merge your branch is provided in README.md file.");
-        Thread.Sleep(1000);
+        Thread.Sleep(_sleepTime);
         Console.WriteLine("Congratulations! You have completed the workshop tasks.");
         Console.ReadKey();
     }
