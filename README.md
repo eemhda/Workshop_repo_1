@@ -99,3 +99,8 @@
 > Efter att du har committat dina ändringar så behöver du pusha dem till GitHub
 > I GitHub Desktop finns det en "Push origin" knapp som du kan klicka på
 > I din IDE finns det också alternativ för att pusha ändringar
+
+> ## Merge
+> Välj branch du vill merge *till*
+> Välj branch du vill hämta från
+> Tryck på merge branch1 to branch2
