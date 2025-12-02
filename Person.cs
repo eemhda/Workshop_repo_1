@@ -12,7 +12,7 @@ public class Person
     }
 
     // Override av ToString() för att få snygg utskrift
-    // Demo av Commit/push
+    
     public override string ToString()
     {
         return $"First Name: {FirstName}," +
