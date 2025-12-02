@@ -5,6 +5,7 @@ class Program
     
     static void Main(string[] args)
     {
+        Console.WriteLine("hej från elin");
         RandomFact fact = new RandomFact();
         WorkshopTask workshop = new WorkshopTask();
         bool run = true;
